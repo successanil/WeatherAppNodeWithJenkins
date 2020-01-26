@@ -12,7 +12,7 @@ Usage in node app
 ```
 const app = require('rg-weather-app-node');
 var argv = {
-    a:"Dehardun", 
+    a:"Dehradun", 
     gapi_key:"<google maps key>",
     dapi_key:"<darksky api key>"
 };
