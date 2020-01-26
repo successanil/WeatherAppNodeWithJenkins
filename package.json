@@ -1,16 +1,39 @@
 {
-  "name": "weather-app",
+  "name": "rg-weather-app-node",
   "version": "1.0.0",
   "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/successanil/WeatherAppNode.git"
+  },
+  "keywords": [
+    "react-native",
+    "react-component",
+    "ios",
+    "android",
+    "weather"
+  ],
+  "author": "Anil Kukreti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/successanil/WeatherAppNode/issues"
+  },
+  "homepage": "https://github.com/successanil/WeatherAppNode/#readme",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "axios": "^0.18.1",
     "request": "^2.88.0",
     "yargs": "^4.8.1"
+  },
+  "peerDependencies": {
+    "axios": "^0.18.1",
+    "request": "^2.88.0",
+    "yargs": "^4.8.1"
+  },
+  "devDependencies": {
+    "metro-react-native-babel-preset": "^0.58.0"
   }
 }
