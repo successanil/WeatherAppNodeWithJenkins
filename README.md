@@ -8,6 +8,9 @@ and DARK SKY API(https://darksky.net/).
 
 Tutorial Blog for usage of Library in React Native , Node projects can be found at Link (http://www.relsellglobal.in).
 
+Usage in node app 
+node index.js -a "Dehardun" --gapi_key <Google maps api key> --dapi_key <dark sky api key>
+
 Build something great. People are waiting to see.
 
 
