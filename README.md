@@ -1,12 +1,12 @@
 # WeatherAppNode
 This is weather app for node
 
-A simple library which can give current tempreture of the place for which query is made. This library fetches its results from Google Maps API(https://developers.google.com/maps/)
+A simple library which can give current tempreture of the place for which query is made. This library fetches its results from Google Maps API <a href="https://developers.google.com/maps/">Google Maps Api<a>
 
-and DARK SKY API(https://darksky.net/).
+and DARK SKY API <a href="https://darksky.net/">Dark Sky Api</a>.
 
 
-Tutorial Blog for usage of Library in React Native , Node projects can be found at Link (http://www.relsellglobal.in).
+Tutorial Blog for usage of Library in React Native , Node projects can be found at Link <a href="http://www.relsellglobal.in">Blog Link</a>.
 
 Usage in node app 
 ```
