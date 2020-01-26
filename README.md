@@ -6,7 +6,7 @@ A simple library which can give current tempreture of the place for which query 
 and DARK SKY API <a href="https://darksky.net/">Dark Sky Api</a>.
 
 
-Tutorial Blog for usage of Library in React Native , Node projects can be found at Link <a href="http://www.relsellglobal.in">Blog Link</a>.
+Tutorial Blog for usage of Library in React Native , Node projects can be found at <a href="http://www.relsellglobal.in">Blog Link</a>.
 
 Usage in node app 
 ```
