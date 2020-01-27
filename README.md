@@ -8,6 +8,8 @@ and DARK SKY API <a href="https://darksky.net/">Dark Sky Api</a>.
 
 Tutorial Blog for usage of Library in React Native , Node projects can be found at <a href="http://www.relsellglobal.in">Blog Link</a>.
 
+Using libary in React native project can be found at <a href="http://www.relsellglobal.in">Blog Link</a>. 
+
 Usage in node app 
 ```
 const app = require('rg-weather-app-node');
