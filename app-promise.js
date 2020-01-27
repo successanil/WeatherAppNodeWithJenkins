@@ -50,7 +50,3 @@ return axios.get(weatherUrl);
 });
 
 
-
-
-
-// 8c84e2eb178a6b650e1f8895406e1998
