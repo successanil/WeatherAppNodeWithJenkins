@@ -1,6 +1,6 @@
 {
   "name": "rg-weather-app-node",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "repository": {
     "type": "git",
@@ -25,12 +25,10 @@
   },
   "dependencies": {
     "axios": "^0.18.1",
-    "request": "^2.88.0",
     "yargs": "^4.8.1"
   },
   "peerDependencies": {
     "axios": "^0.18.1",
-    "request": "^2.88.0",
     "yargs": "^4.8.1"
   },
   "devDependencies": {
