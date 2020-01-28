@@ -11,4 +11,4 @@ jobs:
       - checkout
       - run: npm install
       - run: node index.js -a Dehradun --gapi_key $GAPI_KEY --dapi_key $DAPI_KEY
-      - run: echo $NPM_TOKEN > ~/.npmrc
+      - run: echo "$NPM_TOKEN" > ~/.npmrc
