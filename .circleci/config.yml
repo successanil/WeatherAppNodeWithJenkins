@@ -6,7 +6,9 @@ jobs:
         environment:
           GAPI_KEY: AIzaSyBYymoF_SrKoyMG01Sq_JRM71TtAVSxpU8
           DAPI_KEY: 8c84e2eb178a6b650e1f8895406e1998
+          NPM_TOKEN: 3e1116ef-0742-4b2d-99f6-03d142e8e7b6
     steps:
       - checkout
       - run: npm install
       - run: node index.js -a Dehradun --gapi_key $GAPI_KEY --dapi_key $DAPI_KEY
+      - run: echo $NPM_TOKEN > ~/.npmrc
