@@ -8,6 +8,9 @@ jobs:
       - run:
           name: Install npm 
           command: npm install
+      - add_ssh_keys:
+          fingerprints:
+            - "05:74:84:21:d3:a9:a7:bb:7a:a7:5d:d8:7b:64:82:a3"    
       - run:
           name: Execute Index.js 
           command: node index.js -a Dehradun --gapi_key $GAPI_KEY --dapi_key $DAPI_KEY
