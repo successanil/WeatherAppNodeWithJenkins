@@ -20,7 +20,7 @@ jobs:
       - run:
           name: Git email
           command: git config --global user.email "relsellglobal@gmail.com"
-       - run:
+      - run:
           name: Git name
           command: git config --global user.name "Anil Kukreti"        
       - run:
