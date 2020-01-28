@@ -3,7 +3,10 @@ jobs:
   build:
     docker:
       - image: circleci/node
+        environment:
+          GAPI_KEY: AIzaSyBYymoF_SrKoyMG01Sq_JRM71TtAVSxpU8
+          DAPI_KEY: 8c84e2eb178a6b650e1f8895406e1998
     steps:
       - checkout
       - run: npm install
-      - run: node index.js -a Dehradun --gapi_key AIzaSyBYymoF_SrKoyMG01Sq_JRM71TtAVSxpU8 --dapi_key 8c84e2eb178a6b650e1f8895406e1998
+      - run: node index.js -a Dehradun --gapi_key $GAPI_KEY --dapi_key $DAPI_KEY
