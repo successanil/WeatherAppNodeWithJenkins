@@ -1,0 +1,19 @@
+version: 2.0
+jobs:
+  build:
+    docker:
+      - image: circleci/node
+    steps:
+      - checkout
+      - run:
+          name: Install npm 
+          command: npm install
+      - run:
+          name: Execute Index.js 
+          command: node index.js -a Dehradun --gapi_key $GAPI_KEY --dapi_key $DAPI_KEY
+      - run: 
+          name: Auth With NPM
+          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > .npmrc
+      - run:
+          name: Publish to NPM
+          command: npm publish    
