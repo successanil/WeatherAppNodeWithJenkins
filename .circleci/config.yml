@@ -28,7 +28,7 @@ jobs:
           command: git config --global user.name "Anil Kukreti"        
       - run:
           name: Adding Git TAG
-          command: git tag -a 'Release_$(CIRCLE_TAG)' -m "Release"
+          command: git tag -a 'Release_$CIRCLE_TAG' -m "Release"
       - run:
           name: Pushing Git
-          command: git push origin tag 'Release_$(CIRCLE_TAG)'            
+          command: git push origin tag 'Release_$CIRCLE_TAG'            
