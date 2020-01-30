@@ -1,7 +1,7 @@
 pipeline {
     agent { docker { image 'node' } }
     environment {
-        HOME = '.'
+        HOME = './jenkins/'
     }
     stages {
         stage('build') {
