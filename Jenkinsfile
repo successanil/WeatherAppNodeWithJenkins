@@ -8,7 +8,7 @@ pipeline {
             steps {
                 //sh 'npm install'
                 //sh 'npm test'
-                echo "//registry.npmjs.org/:_authToken=${env.GAPI_KEY} >> ~/.npmrc"
+                echo "//registry.npmjs.org/:_authToken=${env.NPM_TOKEN} >> ~/.npmrc"
                 sh 'npm publish'
             }
         }
