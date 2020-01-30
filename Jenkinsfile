@@ -7,10 +7,11 @@ pipeline {
         stage('build') {
             steps {
                 // sh "printenv"
-                sh 'npm install'
+                // sh 'npm install'
                 //sh 'npm test'
-                echo "//registry.npmjs.org/:_authToken=${env.NPM_TOKEN} >> ~/.npmrc"
-                sh 'npm publish'
+                // echo "//registry.npmjs.org/:_authToken=${env.NPM_TOKEN} >> ~/.npmrc"
+                sh 'npm pack'
+                // sh 'npm publish'
             }
         }
     }
