@@ -8,7 +8,7 @@ pipeline {
         stage('build') {
             steps {
                 sh 'npm install'
-                sh "echo $(GAPI_KEY)"
+                sh "echo ${GAPI_KEY}"
             }
         }
     }
