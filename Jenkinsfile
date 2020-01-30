@@ -9,7 +9,7 @@ pipeline {
             steps {
                 //sh 'npm install'
                 //sh 'npm test'
-                echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN} >> ~/.npmrc"
+                echo "//registry.npmjs.org/:_authToken=env.NPM_TOKEN >> ~/.npmrc"
             }
         }
     }
