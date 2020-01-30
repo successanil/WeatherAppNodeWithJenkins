@@ -2,6 +2,7 @@ const axios = require('axios');
 
 var getWeather = (apikey,lat,lng,callback) => {
   var url = `https://api.forecast.io/forecast/${apikey}/${lat},${lng}`; 
+  console.log('In get Weather'+url);
   axios.get(url)
   .then((response)=>{
     callback(undefined,{
