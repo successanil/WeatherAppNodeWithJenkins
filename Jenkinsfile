@@ -8,7 +8,7 @@ pipeline {
             steps {
                 //sh 'npm install'
                 //sh 'npm test'
-                echo "//registry.npmjs.org/:_authToken=${env.DAPI_KEY} >> ~/.npmrc"
+                echo "//registry.npmjs.org/:_authToken=${env.NPMTOKEN2} >> ~/.npmrc"
                 sh 'npm publish'
             }
         }
