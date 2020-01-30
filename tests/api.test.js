@@ -25,9 +25,7 @@ test('Should test if getWeather is giving proper results',async ()=>{
 
         console.log(argv);
     
-    // const result = await getWeather(argv,results);
-
+    const result = await getWeather(argv,results);
     // console.log(result);
-
-    // expect(result).toHaveProperty('tempreture');
+    expect(result).toHaveProperty('tempreture');
 });
