@@ -6,11 +6,10 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh "printenv"
-                //sh 'npm install'
+                // sh "printenv"
+                sh 'npm install'
                 //sh 'npm test'
-                echo "${toknpm}"
-                echo "//registry.npmjs.org/:_authToken=${env.TOKNPM} >> ~/.npmrc"
+                echo "//registry.npmjs.org/:_authToken=${env.NPM_TOKEN} >> ~/.npmrc"
                 sh 'npm publish'
             }
         }
