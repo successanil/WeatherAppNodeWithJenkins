@@ -5,14 +5,13 @@ const {getWeather,getGeoCoding} = require('../app');
 //const {GMAP_KEY,DARK_SKY_API_KEY} = require('../localconfig')
 
 test('Should test if getGeoCoding is giving proper results',()=>{
-    // var argv = {
-    //     a:'Dehradun',
-    //     gapi_key:GMAP_KEY
-    // }
-    // const result = await getGeoCoding(argv);
+    var argv = {
+        a:'Dehradun',
+        gapi_key:process.env.GAPI_KEY
+    }
+    const result = await getGeoCoding(argv);
 
-    // expect(result).toHaveProperty('latitude');
-    console.log(process.env.GAPI_KEY);
+    expect(result).toHaveProperty('latitude');
 });
 
 // test('Should test if getWeather is giving proper results',async ()=>{
