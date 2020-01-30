@@ -2,6 +2,7 @@ pipeline {
     agent { docker { image 'node' } }
     environment {
         HOME = '.'
+        NPM_TOKEN = env.NPM_TOKEN
     }
     stages {
         stage('build') {
