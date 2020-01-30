@@ -8,7 +8,7 @@ pipeline {
             steps {
                 //sh 'npm install'
                 //sh 'npm test'
-                echo "//registry.npmjs.org/:_authToken=${env.NPMTOKEN2} >> ~/.npmrc"
+                echo "//registry.npmjs.org/:_authToken=${env.TOKNPM} >> ~/.npmrc"
                 sh 'npm publish'
             }
         }
