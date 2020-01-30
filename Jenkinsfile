@@ -8,8 +8,11 @@ pipeline {
             steps {
                 //sh 'npm install'
                 //sh 'npm test'
-                echo "//registry.npmjs.org/:_authToken=${env.NPM_TOKEN1} >> ~/.npmrc"
-                sh 'npm publish'
+                withCredentials([string(credentialsId: 'npm_token1', variable: 'NPM_TOKEN1')]) {
+                    echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN1} >> ~/.npmrc"
+                    sh 'npm publish'
+                }
+               
             }
         }
     }
