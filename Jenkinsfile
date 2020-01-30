@@ -6,6 +6,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
+                sh "printenv"
                 //sh 'npm install'
                 //sh 'npm test'
                 echo "${env.toknpm}"
