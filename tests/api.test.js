@@ -4,7 +4,7 @@
 const {getWeather,getGeoCoding} = require('../app');
 //const {GMAP_KEY,DARK_SKY_API_KEY} = require('../localconfig')
 
-test('Should test if getGeoCoding is giving proper results',async ()=>{
+test('Should test if getGeoCoding is giving proper results',()=>{
     // var argv = {
     //     a:'Dehradun',
     //     gapi_key:GMAP_KEY
