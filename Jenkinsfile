@@ -9,7 +9,7 @@ pipeline {
                 // sh "printenv"
                 // sh 'npm install'
                 //sh 'npm test'
-                echo "//registry.npmjs.org/:_authToken=${env.NPM_TOKEN} >> ~/.npmrc"
+                sh "echo //registry.npmjs.org/:_authToken=${env.NPM_TOKEN} >> ~/.npmrc"
                 // sh 'npm pack'
                 sh 'npm publish'
             }
