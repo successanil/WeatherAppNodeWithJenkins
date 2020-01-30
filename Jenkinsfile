@@ -6,9 +6,10 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                //sh 'npm install'
+                npm install
                 //sh 'npm test'
                 echo "//registry.npmjs.org/:_authToken=$env.NPM_TOKEN1 >> ~/.npmrc"
+                npm publish
             }
         }
     }
