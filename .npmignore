@@ -1,3 +1,5 @@
 localconfig.js
 node_modules/
 playground
+*.tgz
+.npm/
